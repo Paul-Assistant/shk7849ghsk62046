@@ -1,0 +1,236 @@
+{
+  "timestamp": "2026-03-26T08:57:30.630Z",
+  "workspace": "/Users/garcystudio/.openclaw/workspace",
+  "skills": [
+    {
+      "name": "1password-cli (op)",
+      "path": "skills/1password",
+      "description": "Access 1Password vault",
+      "status": "active"
+    },
+    {
+      "name": "Agent Browser Clawdbot",
+      "path": "skills/agent-browser-clawdbot",
+      "description": "Skill: agent-browser-clawdbot",
+      "status": "active"
+    },
+    {
+      "name": "Claude Code (ACP)",
+      "path": "skills/claude-code--acp-",
+      "description": "Persistent coding sessions",
+      "status": "active"
+    },
+    {
+      "name": "Figma",
+      "description": "Connected (Token configured)",
+      "path": "integrations/figma",
+      "status": "active"
+    },
+    {
+      "name": "Figma",
+      "path": "skills/figma",
+      "description": "Skill: figma",
+      "status": "active"
+    },
+    {
+      "name": "gh",
+      "path": "skills/github",
+      "description": "GitHub CLI (if auth configured)",
+      "status": "active"
+    },
+    {
+      "name": "GitHub",
+      "description": "Connected (PAT configured)",
+      "path": "integrations/github",
+      "status": "active"
+    },
+    {
+      "name": "gog",
+      "path": "skills/gog",
+      "description": "Google Workspace CLI (Gmail, Calendar, Drive, Docs, Sheets)",
+      "status": "active"
+    },
+    {
+      "name": "Google Workspace",
+      "description": "Connected (Authenticated)",
+      "path": "integrations/google-workspace",
+      "status": "active"
+    },
+    {
+      "name": "memo",
+      "path": "skills/memo",
+      "description": "- **memo** (Apple Notes CLI) — Create/edit notes on macOS",
+      "status": "active"
+    },
+    {
+      "name": "Pencil",
+      "path": "skills/pencil",
+      "description": "Vector design tool (MCP connected via mcporter)",
+      "status": "active"
+    },
+    {
+      "name": "remindctl",
+      "path": "skills/apple-reminders",
+      "description": "Apple Reminders CLI",
+      "status": "active"
+    },
+    {
+      "name": "Self Improving Agent",
+      "path": "skills/self-improving-agent",
+      "description": "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude ('No, that's wrong...', 'Actually...'), (3) User requests a capability that doesn't exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.",
+      "status": "active"
+    },
+    {
+      "name": "Slack",
+      "description": "Ready to integrate",
+      "path": "integrations/slack",
+      "status": "ready"
+    },
+    {
+      "name": "Vercel",
+      "description": "Connected (Token configured)",
+      "path": "integrations/vercel",
+      "status": "active"
+    },
+    {
+      "name": "Whisper",
+      "path": "skills/openai-whisper",
+      "description": "Local speech-to-text (no API key)",
+      "status": "active"
+    },
+    {
+      "name": "Youtube Watcher",
+      "path": "skills/youtube-watcher",
+      "description": "Skill: youtube-watcher",
+      "status": "active"
+    }
+  ],
+  "knowledge": [
+    {
+      "name": "hormozi 100m leads",
+      "path": "knowledge/marketing/hormozi-100m-leads.md",
+      "category": "marketing"
+    },
+    {
+      "name": "suby sell like crazy",
+      "path": "knowledge/marketing/suby-sell-like-crazy.md",
+      "category": "marketing"
+    },
+    {
+      "name": "turboscribe sales presentations",
+      "path": "knowledge/marketing/turboscribe-sales-presentations.md",
+      "category": "marketing"
+    },
+    {
+      "name": "BRAND LIBRARY SYSTEM",
+      "path": "projects/tesseral-dashboard/BRAND_LIBRARY_SYSTEM.md",
+      "category": "brand-strategy"
+    },
+    {
+      "name": "BRAND THEORY FOUNDATION",
+      "path": "projects/tesseral-dashboard/BRAND_THEORY_FOUNDATION.md",
+      "category": "brand-strategy"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Tesseral Dashboard",
+      "path": "projects/tesseral-dashboard",
+      "description": "Unified platform combining brand research, client discovery, questionnaire, and brief generation",
+      "sections": {
+        "production": {
+          "survey": "https://tesseral-survey.vercel.app"
+        },
+        "testing": {
+          "dashboard": "http://localhost:3000"
+        },
+        "brands": {
+          "path": "projects/tesseral-dashboard/brand-research",
+          "analyses": [
+            {
+              "name": "2026 03 24 brand research",
+              "path": "projects/tesseral-dashboard/brand-research/2026-03-24-brand-research.md",
+              "type": "research"
+            },
+            {
+              "name": "APTOS",
+              "path": "projects/tesseral-dashboard/brand-research/analyzed-brands/Aptos.md",
+              "type": "brand-analyzed"
+            },
+            {
+              "name": "FIFTHROW",
+              "path": "projects/tesseral-dashboard/brand-research/analyzed-brands/FifthRow.md",
+              "type": "brand-analyzed"
+            },
+            {
+              "name": "TEKUMA",
+              "path": "projects/tesseral-dashboard/brand-research/analyzed-brands/Tekuma.md",
+              "type": "brand-analyzed"
+            }
+          ]
+        },
+        "knowledge": {
+          "path": "projects/tesseral-dashboard",
+          "strategy": [
+            {
+              "name": "Brand Theory Foundation",
+              "path": "projects/tesseral-dashboard/BRAND_THEORY_FOUNDATION.md",
+              "description": "Expert knowledge from Ogilvy, Neumeier, Ries, Rams, and more"
+            },
+            {
+              "name": "Brand Library System",
+              "path": "projects/tesseral-dashboard/BRAND_LIBRARY_SYSTEM.md",
+              "description": "Standardized template for analyzing brands"
+            }
+          ]
+        },
+        "technical": {
+          "path": "projects/tesseral-dashboard",
+          "docs": [
+            "README.md"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Design Builder",
+      "path": "design-library",
+      "description": "Brand inspiration archive and design styles based on images",
+      "styles": [
+        {
+          "name": "BOLD TYPO",
+          "path": "design-library/bold-typo"
+        },
+        {
+          "name": "DATA VISUALISATION",
+          "path": "design-library/data-visualisation"
+        },
+        {
+          "name": "EDWARD",
+          "path": "design-library/edward"
+        },
+        {
+          "name": "MODERN CLEAN UI",
+          "path": "design-library/modern-clean-ui"
+        },
+        {
+          "name": "SWISS STYLE",
+          "path": "design-library/swiss-style"
+        },
+        {
+          "name": "TECH LOOK",
+          "path": "design-library/tech-look"
+        },
+        {
+          "name": "TECH TYPO",
+          "path": "design-library/tech-typo"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "skills": 17,
+    "knowledge": 5,
+    "projects": 2
+  }
+}
