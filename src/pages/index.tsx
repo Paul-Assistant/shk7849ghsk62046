@@ -117,6 +117,9 @@ export default function Home({ data }: { data: DashboardData }) {
                         {project.sections.brands.analyses.map((brand: any) => (
                           <div key={brand.name} style={{ backgroundColor: '#f9fafb', padding: '0.5rem', borderRadius: '0.25rem' }}>
                             <p style={{ margin: 0, fontSize: '0.875rem', fontWeight: '500' }}>{brand.name}</p>
+                            <span style={{ fontSize: '0.7rem', color: '#9ca3af', display: 'block', marginTop: '0.25rem' }}>
+                              {brand.path}
+                            </span>
                           </div>
                         ))}
                       </div>
@@ -142,8 +145,11 @@ export default function Home({ data }: { data: DashboardData }) {
                       <p style={{ margin: '0 0 0.75rem 0', fontSize: '0.875rem', fontWeight: '600', color: '#6b7280' }}>🎭 Design Styles ({project.styles.length})</p>
                       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>
                         {project.styles.map((style: any) => (
-                          <div key={style.name} style={{ backgroundColor: '#f9fafb', padding: '0.5rem', borderRadius: '0.25rem', textAlign: 'center' }}>
-                            <p style={{ margin: 0, fontSize: '0.875rem', fontWeight: '500' }}>{style.name}</p>
+                          <div key={style.name} style={{ backgroundColor: '#f9fafb', padding: '0.5rem', borderRadius: '0.25rem' }}>
+                            <p style={{ margin: 0, fontSize: '0.875rem', fontWeight: '500', textAlign: 'center' }}>{style.name}</p>
+                            <span style={{ fontSize: '0.7rem', color: '#9ca3af', display: 'block', marginTop: '0.25rem', textAlign: 'center' }}>
+                              {style.path}
+                            </span>
                           </div>
                         ))}
                       </div>
