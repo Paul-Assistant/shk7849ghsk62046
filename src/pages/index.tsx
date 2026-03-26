@@ -88,6 +88,7 @@ export default function Home({ data }: { data: DashboardData }) {
                   <p style={{ margin: '0.5rem 0 0 0', opacity: 0.9 }}>{project.description}</p>
                 </div>
                 <div style={{ padding: '1.5rem' }}>
+                  {/* Tesseral Dashboard content */}
                   {project.sections?.brands?.analyses && (
                     <div style={{ marginBottom: '1rem' }}>
                       <p style={{ margin: '0 0 0.5rem 0', fontSize: '0.875rem', fontWeight: '600', color: '#6b7280' }}>🎨 Analyzed Brands</p>
@@ -108,6 +109,20 @@ export default function Home({ data }: { data: DashboardData }) {
                           <div key={doc.name} style={{ backgroundColor: '#f9fafb', padding: '0.5rem', borderRadius: '0.25rem' }}>
                             <p style={{ margin: 0, fontSize: '0.875rem', fontWeight: '500' }}>{doc.name}</p>
                             <p style={{ margin: '0.25rem 0 0 0', fontSize: '0.75rem', color: '#9ca3af' }}>{doc.description}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                  
+                  {/* Design Builder styles */}
+                  {project.styles && project.styles.length > 0 && (
+                    <div>
+                      <p style={{ margin: '0 0 0.75rem 0', fontSize: '0.875rem', fontWeight: '600', color: '#6b7280' }}>🎭 Design Styles ({project.styles.length})</p>
+                      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>
+                        {project.styles.map((style: any) => (
+                          <div key={style.name} style={{ backgroundColor: '#f9fafb', padding: '0.5rem', borderRadius: '0.25rem', textAlign: 'center' }}>
+                            <p style={{ margin: 0, fontSize: '0.875rem', fontWeight: '500' }}>{style.name}</p>
                           </div>
                         ))}
                       </div>
