@@ -28,7 +28,7 @@ export async function getStaticProps() {
 
 export default function Home({ data }: { data: DashboardData }) {
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#f9fafb' }}>
+    <div style={{ minHeight: '100vh', backgroundColor: '#f9fafb', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
       {/* Header */}
       <nav style={{ borderBottom: '1px solid #e5e7eb', backgroundColor: 'white' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '1rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -65,13 +65,34 @@ export default function Home({ data }: { data: DashboardData }) {
         {/* Knowledge Section */}
         <section style={{ marginBottom: '3rem' }}>
           <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '1.5rem' }}>📚 Knowledge ({data.stats.knowledge})</h3>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '1rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1rem' }}>
             {data.knowledge?.map((k: any) => (
               <div key={k.name} style={{ backgroundColor: 'white', padding: '1rem', border: '1px solid #e5e7eb', borderRadius: '0.5rem' }}>
-                <p style={{ margin: 0, fontWeight: '500' }}>{k.name}</p>
+                <p style={{ margin: 0, fontWeight: '500', fontSize: '0.95rem' }}>{k.name}</p>
                 <span style={{ display: 'inline-block', marginTop: '0.5rem', backgroundColor: '#f3f4f6', padding: '0.25rem 0.5rem', borderRadius: '0.25rem', fontSize: '0.75rem', color: '#6b7280' }}>
                   {k.category}
                 </span>
+                {/* Show details for Brand Theory Foundation */}
+                {k.name === 'BRAND THEORY FOUNDATION' && (
+                  <div style={{ marginTop: '0.75rem', fontSize: '0.8rem', color: '#6b7280', lineHeight: '1.5' }}>
+                    <p style={{ margin: '0.5rem 0 0.25rem 0', fontWeight: '600' }}>Experts:</p>
+                    <ul style={{ margin: '0.25rem 0 0.5rem 1rem', paddingLeft: 0 }}>
+                      <li>David Ogilvy (clarity, restraint)</li>
+                      <li>Marty Neumeier (brand gap, Zag)</li>
+                      <li>Ries & Trout (positioning)</li>
+                      <li>Pentagram, Ellen Lupton</li>
+                      <li>Dieter Rams, Müller-Brockmann</li>
+                      <li>Eames, Christopher Alexander</li>
+                    </ul>
+                    <p style={{ margin: '0.25rem 0 0 0', fontWeight: '600' }}>Domains:</p>
+                    <ul style={{ margin: '0.25rem 0 0 1rem', paddingLeft: 0 }}>
+                      <li>Color theory & psychology</li>
+                      <li>Typography science</li>
+                      <li>Design psychology</li>
+                      <li>7 universal principles</li>
+                    </ul>
+                  </div>
+                )}
               </div>
             ))}
           </div>
